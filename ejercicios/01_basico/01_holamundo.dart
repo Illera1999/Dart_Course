@@ -1,7 +1,7 @@
 
 main(){
   // print('Hola Mundo');
-  holaMundo();
+  print (holaMundo());
 }
 
 String holaMundo(){
