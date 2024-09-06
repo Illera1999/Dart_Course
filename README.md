@@ -18,10 +18,30 @@ Este repositorio está organizado de la siguiente manera:
 
 - **El legendario "Hola Mundo"**: 💥 La piedra angular de toda carrera en programación. Sí, hemos hecho que Dart nos diga "Hola Mundo", y créeme, ¡fue épico! 🎉 No es solo una línea de texto, es el primer paso hacia la dominación del mundo (del código, claro). 😎
 
+- **Tipos de Datos en Dart** 🔢
 
+Dart ofrece una variedad de tipos de datos que permiten manejar información de forma eficiente:
 
-## ¿Cómo Usar Este Repositorio? 🛠️
+- **int**: Representa números enteros. Por ejemplo, `int a = 1;`.
+- **double**: Utilizado para números con decimales. Ejemplo: `double b = 1.0;`.
+- **var**: Permite declarar variables sin especificar el tipo explícitamente, ya que Dart infiere el tipo. Ejemplo: `var c = 1;`.
+- **int?**: Añade la posibilidad de que la variable sea nula, lo que es útil cuando una variable puede no tener un valor asignado. Ejemplo: `int? d;`.
 
-1. **Clonar el repositorio**: 
-   ```bash
-   git clone https://github.com/tu-usuario/tu-repositorio.git
+Dart también soporta la inicialización tardía de variables con la palabra clave `late`, lo que permite asignarles valores más adelante en la ejecución.
+
+- **Manejo de Strings en Dart** 📝
+
+Las cadenas de texto (Strings) en Dart son secuencias de caracteres que pueden representarse usando comillas simples o dobles. Dart permite varias operaciones y formatos para trabajar con Strings:
+
+- **Declaración básica**: Puedes usar comillas simples (`'`) o dobles (`"`). Ejemplo: `String nombre = 'Tony';` o `String apellido = "Stark";`.
+- **Interpolación**: Dart permite la interpolación de variables dentro de Strings utilizando el símbolo `$`. Ejemplo: `String nombreCompleto = '$nombre $apellido';`.
+- **Secuencias de escape**: Para caracteres especiales como comillas dentro de una cadena, se utiliza la barra invertida (`\`). Ejemplo: `String nombre3 = "O\'Connor";`.
+- **Cadenas multilínea**: Puedes crear cadenas que abarcan varias líneas utilizando tres comillas simples (`'''`). Ejemplo:
+
+  ```dart
+  String multilineas = '''
+    Hola Mundo!
+    Esto es una prueba de cómo funciona el 
+    salto de línea.
+  ''';
+
