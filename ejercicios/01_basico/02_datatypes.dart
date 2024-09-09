@@ -1,3 +1,5 @@
+import 'dart:io';
+
 main() {
 
   // Números
@@ -54,4 +56,56 @@ main() {
   print('prueba isActive: $isActive');
   print('prueba active: $active');
   print('prueba isNotActive: $isNotActive');
+
+
+
+  // ==== List
+  // List<String> villanosDeprecated = new List();
+  List<String> villanos = ['Lex', 'Red Skull', 'Doom']; // Son base 0
+  //                       0        1            2
+
+  villanos[0] = 'Darth Vader';
+  villanos.add('Darth Vader');
+
+  villanos = villanos.toSet().toList();
+  // Se elimina el elemento si ya existe en la lista
+
+  print(villanos);
+
+
+  // ==== Set
+  Set<String> villanosSet2 = {'Lex', 'Red Skull', 'Doom'};
+
+  villanosSet2.add('Darth Vader');
+  villanosSet2.add('Darth Vader'); // El duene no se agrega
+                                    // porque ya existe
+                                    // Los set no tienen duplicados.
+
+  print(villanosSet2);
+
+  // ==== Map
+  Map<String, dynamic> ironMan = {
+    'name': 'Tony Stark',
+    'age': 45,
+    'job': 'Iron Man',
+    'weapon': 'Iron Man Suit',
+  };
+
+  Map<int, dynamic> capitan = new Map();
+
+  print(ironMan);
+  print(ironMan['name']);
+  print(ironMan['age']);
+
+
+  ironMan.addAll({
+    'powers': ['super strength', 'invulnerability'],
+  });
+
+
+  // capitan.addAll(ironMan);
+
+
+  print(capitan);
+  print(ironMan);
 }

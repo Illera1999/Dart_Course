@@ -1,6 +1,12 @@
 # Aprendiendo Dart 🚀
 
-¡Bienvenido a mi repositorio de aprendizaje de Dart! Aquí documentaré mi progreso mientras exploro este poderoso lenguaje de programación. El objetivo de este repositorio es servir como un diario de aprendizaje y como un recurso para otros que también estén interesados en aprender Dart.
+¡Bienvenido a mi repositorio de aprendizaje de Dart! Aquí documentaré mi progreso mientras exploro este poderoso lenguaje de programación. Este repositorio no solo es un diario de mi aprendizaje, sino también un recurso para otros que estén interesados en aprender Dart.
+
+## Tabla de Contenidos 📖
+1. [¿Qué es Dart?](#qué-es-dart-)
+2. [Estructura del Repositorio](#estructura-del-repositorio-)
+3. [Temas Cubiertos](#temas-cubiertos-hasta-ahora-)
+4. [Colaboración](#colaboración-)
 
 ## ¿Qué es Dart? 🎯
 
@@ -10,63 +16,23 @@
 
 Este repositorio está organizado de la siguiente manera:
 
-- **/notas**: Contiene notas detalladas sobre los temas que voy cubriendo, incluyendo teoría, ejemplos de código y referencias.
-- **/ejercicios**: Ejercicios prácticos que realizo para reforzar el aprendizaje. Aquí puedes encontrar soluciones comentadas y explicaciones detalladas.
-- **/recursos**: Links a recursos adicionales como artículos, videos, y documentación oficial que considero útiles para aprender Dart.
+- **[Notas](./notas/README.md)**: Notas teóricas y ejemplos de código sobre temas cubiertos.
+- **[Ejercicios](./ejercicios/README.md)**: Ejercicios prácticos realizados para reforzar el aprendizaje.
+- **[Recursos](./recursos/README.md)**: Links a artículos, videos y otros recursos útiles.
 
-## Temas Cubiertos hasta Ahora 📚
+## Temas Cubiertos Hasta Ahora 📚
 
-- **El legendario "Hola Mundo"**: 💥 La piedra angular de toda carrera en programación. Sí, hemos hecho que Dart nos diga "Hola Mundo", y créeme, ¡fue épico! 🎉 No es solo una línea de texto, es el primer paso hacia la dominación del mundo (del código, claro). 😎
+- **El legendario "Hola Mundo"**: El punto de partida para toda carrera en programación.
+- **Tipos de Datos en Dart**: Explicación detallada de los tipos de datos como `int`, `double`, `var`, `bool`, y `String`.
+- **Manejo de Strings**: Cómo trabajar con cadenas de texto en Dart, incluyendo interpolación, secuencias de escape y cadenas multilínea.
+- **Operadores Lógicos**: Uso de operadores como `&&`, `||`, y `!`.
 
-- **Tipos de Datos en Dart** 🔢
+[Ver más detalles sobre estos temas](./ejercicios/01_basico/README.md)
 
-Dart ofrece una variedad de tipos de datos que permiten manejar información de forma eficiente:
+## Colaboración 🤝
 
-- **int**: Representa números enteros. Por ejemplo, `int a = 1;`.
-- **double**: Utilizado para números con decimales. Ejemplo: `double b = 1.0;`.
-- **var**: Permite declarar variables sin especificar el tipo explícitamente, ya que Dart infiere el tipo. Ejemplo: `var c = 1;`.
-- **int?**: Añade la posibilidad de que la variable sea nula, lo que es útil cuando una variable puede no tener un valor asignado. Ejemplo: `int? d;`.
+Si tienes sugerencias o quieres colaborar, ¡no dudes en hacer un pull request o abrir un issue! Tu contribución es bienvenida.
 
-Dart también soporta la inicialización tardía de variables con la palabra clave `late`, lo que permite asignarles valores más adelante en la ejecución.
+---
 
-- **Manejo de Strings en Dart** 📝
-
-Las cadenas de texto (Strings) en Dart son secuencias de caracteres que pueden representarse usando comillas simples o dobles. Dart permite varias operaciones y formatos para trabajar con Strings:
-
-- **Declaración básica**: Puedes usar comillas simples (`'`) o dobles (`"`). Ejemplo: `String nombre = 'Tony';` o `String apellido = "Stark";`.
-- **Interpolación**: Dart permite la interpolación de variables dentro de Strings utilizando el símbolo `$`. Ejemplo: `String nombreCompleto = '$nombre $apellido';`.
-- **Secuencias de escape**: Para caracteres especiales como comillas dentro de una cadena, se utiliza la barra invertida (`\`). Ejemplo: `String nombre3 = "O\'Connor";`.
-- **Cadenas multilínea**: Puedes crear cadenas que abarcan varias líneas utilizando tres comillas simples (`'''`). Ejemplo:
-
-  ```dart
-  String multilineas = '''
-    Hola Mundo!
-    Esto es una prueba de cómo funciona el 
-    salto de línea.
-  ''';
-
-- **Manejo de 'bool' en Dart** 🔢
-
-En Dart, el tipo `bool` representa un valor booleano, que solo puede ser `true` o `false`. Es útil para controlar el flujo de ejecución en condicionales, bucles, y en cualquier situación donde necesites verificar una condición lógica.
-
-- `&&` (AND lógico)
-- `||` (OR lógico)
-- `!` (NOT lógico)
-
-## Ejemplo con operadores lógicos:
-
-```dart
-void main() {
-  bool a = true;
-  bool b = false;
-
-  // AND lógico
-  print(a && b); // Imprime: false
-
-  // OR lógico
-  print(a || b); // Imprime: true
-
-  // NOT lógico
-  print(!a);     // Imprime: false
-}
-
+¡Gracias por visitar este repositorio y feliz aprendizaje! 😊
