@@ -45,3 +45,28 @@ Las cadenas de texto (Strings) en Dart son secuencias de caracteres que pueden r
     salto de línea.
   ''';
 
+- **Manejo de 'bool' en Dart** 🔢
+
+En Dart, el tipo `bool` representa un valor booleano, que solo puede ser `true` o `false`. Es útil para controlar el flujo de ejecución en condicionales, bucles, y en cualquier situación donde necesites verificar una condición lógica.
+
+- `&&` (AND lógico)
+- `||` (OR lógico)
+- `!` (NOT lógico)
+
+## Ejemplo con operadores lógicos:
+
+```dart
+void main() {
+  bool a = true;
+  bool b = false;
+
+  // AND lógico
+  print(a && b); // Imprime: false
+
+  // OR lógico
+  print(a || b); // Imprime: true
+
+  // NOT lógico
+  print(!a);     // Imprime: false
+}
+

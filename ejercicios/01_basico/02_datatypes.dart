@@ -1,4 +1,3 @@
-
 main() {
 
   // Números
@@ -48,5 +47,11 @@ main() {
   print(multilineas);
   print(nombreCompleto);
 
-
+  // ==== Boolean 
+  bool? isActive; // Se puede 
+  bool? active = true;
+  bool isNotActive = !active;
+  print('prueba isActive: $isActive');
+  print('prueba active: $active');
+  print('prueba isNotActive: $isNotActive');
 }
