@@ -7,7 +7,7 @@
 void main(List<String> args) {
   
   // Este es un comentario
-  int a = 10; // A debería ser 10
+  // int a = 10; // A debería ser 10
 
   /* // Comentario en bloque
   final personas = [

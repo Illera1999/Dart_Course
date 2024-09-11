@@ -6,7 +6,12 @@ Este directorio contiene los primeros ejercicios que he realizado para aprender 
 1. [Hola Mundo 💥](#1-hola-mundo-)
 2. [Tipos de Datos en Dart 🔢](#2-tipos-de-datos-en-dart-)
 3. [Constantes y Finales en Dart 🛠](#3-constantes-y-finales-en-dart-)
-4. [Cómo ejecutar los archivos Dart ⚙️](#cómo-ejecutar-los-archivos-dart-️)
+4. [Operadores Matemáticos en Dart ➕➖✖️➗](#4-operadores-matematicos-en-dart-)
+5. [Operadores de Asignación en Dart 📥](#5-operadores-de-asignación-en-dart-)
+6. [Operadores Condicionales en Dart ❓](#6-operadores-condicionales-en-dart-)
+7. [Operadores Relacionales en Dart 🔗](#7-operadores-relacionales-en-dart-)
+8. [Comentarios en Dart 📝](#8-comentarios-en-dart-)
+9. [Cómo ejecutar los archivos Dart ⚙️](#cómo-ejecutar-los-archivos-dart-️)
 
 ## Ejercicios Actuales:
 
@@ -50,6 +55,80 @@ Por otro lado, `const` se utiliza para valores que son constantes en tiempo de c
 - **`const`**: Se usa cuando el valor es conocido en tiempo de compilación y permanece constante.
 
 Más detalles se pueden encontrar en el archivo [`03_constantes_finales.dart`](./03_constantes_finales.dart).
+
+---
+
+### 4. **Operadores Matemáticos en Dart** ➕➖✖️➗
+
+Dart soporta una variedad de operadores matemáticos que te permiten realizar operaciones aritméticas y de asignación. Aquí están los operadores matemáticos más comunes:
+
+#### Operadores Aritméticos
+- **Suma (`+`)**: Realiza la adición de dos valores.
+- **Resta (`-`)**: Resta un valor de otro.
+- **Multiplicación (`*`)**: Multiplica dos valores.
+- **División (`/`)**: Realiza una división y devuelve un número de tipo `double`.
+- **División Entera (`~/`)**: Realiza una división pero solo devuelve la parte entera del resultado.
+- **Módulo (`%`)**: Devuelve el resto de la división entre dos números.
+
+#### Operadores de Incremento/Decremento
+- **Incremento (`++`)**: Aumenta el valor de una variable en 1.
+- **Decremento (`--`)**: Disminuye el valor de una variable en 1.
+
+---
+
+### 5. **Operadores de Asignación en Dart** 📥
+
+Los operadores de asignación permiten asignar valores a las variables de manera más eficiente. Estos son algunos de los operadores de asignación más comunes en Dart:
+
+- **Asignación Simple (`=`)**: Asigna un valor a una variable.
+- **Suma Asignación (`+=`)**: Suma un valor a la variable y luego asigna el resultado.
+- **Resta Asignación (`-=`)**: Resta un valor de la variable y luego asigna el resultado.
+- **Multiplicación Asignación (`*=`)**: Multiplica el valor de una variable por otro valor y asigna el resultado.
+- **División Asignación (`/=`)**: Divide el valor de una variable entre otro valor y asigna el resultado.
+- **División Entera Asignación (`~/=`)**: Realiza una división entera y asigna el valor resultante.
+- **Módulo Asignación (`%=`)**: Calcula el resto de una división y asigna el valor resultante.
+
+---
+
+### 6. **Operadores Condicionales en Dart** ❓
+
+Dart proporciona operadores condicionales que permiten evaluar expresiones basadas en condiciones. Estos son algunos de los más comunes:
+
+- **Operador Ternario (`condición ? expr1 : expr2`)**: Evalúa una condición. Si es verdadera, ejecuta `expr1`, de lo contrario, ejecuta `expr2`.
+- **Operador de asignación condicional (`??`)**: Devuelve el valor de la izquierda si no es `null`; de lo contrario, devuelve el valor de la derecha.
+- **Operador de cascada (`..`)**: Permite realizar múltiples operaciones en el mismo objeto en secuencia.
+- **Operador de condición lógica (`&&`, `||`, `!`)**: Permite combinar condiciones lógicas (AND, OR, NOT).
+
+---
+
+### 7. **Operadores Relacionales en Dart** 🔗
+
+Los operadores relacionales se utilizan para comparar dos valores y devuelven un resultado booleano (`true` o `false`). Son fundamentales para realizar evaluaciones en condicionales y bucles.
+
+#### Lista de Operadores Relacionales:
+- **Mayor que (`>`)**: Devuelve `true` si el valor de la izquierda es mayor que el valor de la derecha.
+- **Menor que (`<`)**: Devuelve `true` si el valor de la izquierda es menor que el valor de la derecha.
+- **Mayor o igual que (`>=`)**: Devuelve `true` si el valor de la izquierda es mayor o igual que el valor de la derecha.
+- **Menor o igual que (`<=`)**: Devuelve `true` si el valor de la izquierda es menor o igual que el valor de la derecha.
+- **Igualdad (`==`)**: Devuelve `true` si ambos valores son iguales.
+- **Desigualdad (`!=`)**: Devuelve `true` si ambos valores son diferentes.
+
+Estos operadores son comúnmente utilizados en estructuras de control como `if`, `for` y `while`.
+
+---
+
+### 8. **Comentarios en Dart** 📝
+
+Dart permite agregar comentarios en el código para describir su funcionalidad o hacer anotaciones, y hay varias maneras de hacerlo:
+
+#### Comentarios de una sola línea
+Se utilizan para agregar comentarios breves en una sola línea. Se indica con `//`.
+
+#### Comentarios de múltiples líneas
+Cuando es necesario comentar varias líneas de código o escribir una descripción más extensa, se pueden usar `/* */` para envolver el bloque de comentarios.
+
+#### Comentarios de documentación
+Para documentar funciones, clases o métodos, Dart permite utilizar comentarios especiales de documentación con `///`. Estos comentarios pueden ser procesados por herramientas como DartDoc para generar documentación automáticamente.
 
 ---
 

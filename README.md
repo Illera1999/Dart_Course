@@ -16,9 +16,9 @@
 
 Este repositorio está organizado de la siguiente manera:
 
-- **[Notas](./notas/README.md)**: Notas teóricas y ejemplos de código sobre temas cubiertos.
-- **[Ejercicios](./ejercicios/README.md)**: Ejercicios prácticos realizados para reforzar el aprendizaje.
-- **[Recursos](./recursos/README.md)**: Links a artículos, videos y otros recursos útiles.
+- **Notas**: Notas teóricas y ejemplos de código sobre temas cubiertos.
+- **Ejercicios**: Ejercicios prácticos realizados para reforzar el aprendizaje.
+- **Recursos**: Links a artículos, videos y otros recursos útiles.
 
 ## Temas Cubiertos Hasta Ahora 📚
 
