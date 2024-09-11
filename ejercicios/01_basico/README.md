@@ -2,6 +2,12 @@
 
 Este directorio contiene los primeros ejercicios que he realizado para aprender los fundamentos de Dart. A continuación, encontrarás detalles sobre los temas que cubren cada uno de los archivos y cómo ejecutarlos en tu máquina.
 
+## Índice
+1. [Hola Mundo 💥](#1-hola-mundo-)
+2. [Tipos de Datos en Dart 🔢](#2-tipos-de-datos-en-dart-)
+3. [Constantes y Finales en Dart 🛠](#3-constantes-y-finales-en-dart-)
+4. [Cómo ejecutar los archivos Dart ⚙️](#cómo-ejecutar-los-archivos-dart-️)
+
 ## Ejercicios Actuales:
 
 ### 1. **Hola Mundo** 💥
@@ -28,6 +34,24 @@ Este ejercicio cubre los diferentes tipos de datos disponibles en Dart, tales co
 
 ---
 
+### 3. **Constantes y Finales en Dart** 🛠
+
+Este apartado explica la diferencia entre `const` y `final`, dos palabras clave que se utilizan para declarar valores inmutables en Dart. Aquí te presentamos cómo funcionan y cuándo usarlas.
+
+#### `final`
+La palabra clave `final` indica que una variable solo puede ser asignada una vez, pero el valor se puede asignar en tiempo de ejecución. Esto permite asignar valores dinámicos, pero una vez asignado, no puede cambiar.
+
+#### `const`
+Por otro lado, `const` se utiliza para valores que son constantes en tiempo de compilación. Su valor debe ser conocido y fijo antes de que el programa se ejecute.
+
+#### Diferencias Clave:
+- **`final`**: Se usa cuando el valor se asigna en tiempo de ejecución y no se puede modificar después.
+- **`const`**: Se usa cuando el valor es conocido en tiempo de compilación y permanece constante.
+
+Más detalles se pueden encontrar en el archivo [`03_constantes_finales.dart`](./03_constantes_finales.dart).
+
+---
+
 ## Cómo ejecutar los archivos Dart ⚙️
 
 Para ejecutar el archivo `01_holamundo.dart` o cualquier otro archivo Dart en tu máquina, sigue estos sencillos pasos:
@@ -41,4 +65,19 @@ Asumimos que ya tienes Dart instalado en tu máquina. Si aún no lo has hecho, p
 
    ```bash
    cd ruta\de\tu\proyecto\DART_COURSE\ejercicios\01_basico
-🚀
+
+
+### Paso 2: Ejecutar el archivo Dart
+
+Para ejecutar un archivo Dart, simplemente utiliza el siguiente comando:
+
+
+    ```bash
+    dart nombre_del_archivo.dart
+
+Por ejemplo, para ejecutar 01_holamundo.dart, deberías escribir:
+
+    ```bash
+    dart 01_holamundo.dart
+
+¡Y eso es todo! 🎉 Ahora podrás ver los resultados directamente en la terminal.
