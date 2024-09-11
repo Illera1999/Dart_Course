@@ -28,7 +28,8 @@ Este ejercicio cubre los diferentes tipos de datos disponibles en Dart, tales co
 - **Temas cubiertos**:
   - Tipos de datos primitivos en Dart (`int`, `double`, `String`, `bool`)
   - Uso de `var` para declaración de variables
-  - Inicialización tardía con `late`
+  - **Inicialización tardía con `late`**: 
+    - La palabra clave `late` se utiliza cuando deseas declarar una variable que se inicializará más tarde, pero estás seguro de que su valor será asignado antes de ser utilizado. Esto es útil para evitar errores de inicialización temprana en casos donde la variable no puede tener un valor inicial inmediatamente.
   - Manejo de valores nulos con `int?`
   - Operadores lógicos: `&&`, `||`, `!`
 
@@ -63,21 +64,20 @@ Asumimos que ya tienes Dart instalado en tu máquina. Si aún no lo has hecho, p
 1. Abre una terminal (cmd, PowerShell o la terminal integrada de VS Code).
 2. Navega hasta la carpeta donde tienes tu proyecto. En este caso, navega a la carpeta `ejercicios/01_basico`:
 
-   ```
+   ```bash
    cd ruta\de\tu\proyecto\DART_COURSE\ejercicios\01_basico
-
 
 ### Paso 2: Ejecutar el archivo Dart
 
 Para ejecutar un archivo Dart, simplemente utiliza el siguiente comando:
 
 
-    ```
+    ```bash
     dart nombre_del_archivo.dart
 
 Por ejemplo, para ejecutar 01_holamundo.dart, deberías escribir:
 
-    ```
+    ```bash
     dart 01_holamundo.dart
 
 ¡Y eso es todo! 🎉 Ahora podrás ver los resultados directamente en la terminal.

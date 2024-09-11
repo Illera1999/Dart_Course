@@ -13,7 +13,8 @@ main (){
  print('======================');
 
  final personasFinal = ['Juan', 'Pedro', 'Carlos'];
- const personasConst = ['Juan', 'Pedro', 'Carlos'];
+ const personasConst = ['Juan', 'Pedro', 'Carlos']; // Desde que se compila la aplicacion
+                                                    // no se puede cambiar el valor de personasConst
 
  personasFinal.add('Maria');
  personasConst.add('Maria');
@@ -21,7 +22,10 @@ main (){
  print(personasFinal);
  print(personasConst);
 
+ print('======================');
 
+ late final double x;
+x = 10;
 
-
+ print(x);
 }
