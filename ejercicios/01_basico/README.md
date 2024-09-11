@@ -63,7 +63,7 @@ Asumimos que ya tienes Dart instalado en tu máquina. Si aún no lo has hecho, p
 1. Abre una terminal (cmd, PowerShell o la terminal integrada de VS Code).
 2. Navega hasta la carpeta donde tienes tu proyecto. En este caso, navega a la carpeta `ejercicios/01_basico`:
 
-   ```bash
+   ```
    cd ruta\de\tu\proyecto\DART_COURSE\ejercicios\01_basico
 
 
@@ -72,12 +72,12 @@ Asumimos que ya tienes Dart instalado en tu máquina. Si aún no lo has hecho, p
 Para ejecutar un archivo Dart, simplemente utiliza el siguiente comando:
 
 
-    ```bash
+    ```
     dart nombre_del_archivo.dart
 
 Por ejemplo, para ejecutar 01_holamundo.dart, deberías escribir:
 
-    ```bash
+    ```
     dart 01_holamundo.dart
 
 ¡Y eso es todo! 🎉 Ahora podrás ver los resultados directamente en la terminal.
