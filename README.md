@@ -23,11 +23,16 @@ Este repositorio está organizado de la siguiente manera:
 ## Temas Cubiertos Hasta Ahora 📚
 
 - **El legendario "Hola Mundo"**: El punto de partida para toda carrera en programación.
-- **Tipos de Datos en Dart**: Explicación detallada de los tipos de datos como `int`, `double`, `var`, `bool`, y `String`.
+- **Tipos de Datos en Dart**: Explicación detallada de los tipos de datos como int, double, var, bool, y String.
 - **Manejo de Strings**: Cómo trabajar con cadenas de texto en Dart, incluyendo interpolación, secuencias de escape y cadenas multilínea.
-- **Operadores Lógicos**: Uso de operadores como `&&`, `||`, y `!`.
+- **Operadores Lógicos**: Uso de operadores como &&, ||, y !.
 
 [Ver más detalles sobre estos temas](./ejercicios/01_basico/README.md)
+
+## Nuevas Secciones 🚀
+
+- **Control de Flujo**: Explicación de estructuras de control como condicionales (if, else) y bucles (for, while, do-while).
+  - [Ver detalles sobre control de flujo](./ejercicios/02_control/README.md)
 
 ## Colaboración 🤝
 
@@ -35,4 +40,5 @@ Si tienes sugerencias o quieres colaborar, ¡no dudes en hacer un pull request o
 
 ---
 
-¡Gracias por visitar este repositorio y feliz aprendizaje! 😊
+¡Gracias por visitar este repositorio y feliz aprendizaje! 
+😊
