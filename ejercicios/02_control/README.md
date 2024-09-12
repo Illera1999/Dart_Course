@@ -1,17 +1,16 @@
 # Interacción con la Terminal en Dart 🖥️
 
-Este documento explica cómo realizar interacciones básicas con la terminal utilizando Dart. En este apartado, veremos cómo imprimir mensajes y leer datos del usuario desde la línea de comandos.
+Este documento explica cómo realizar interacciones básicas con la terminal (o línea de comandos) usando Dart. Aquí aprenderás cómo escribir y leer datos en la consola, así como tomar decisiones con estructuras de control como `if` y `else`.
 
 ## Tabla de Contenidos 📖
-1. [Interacción con la Terminal](#interacción-con-la-terminal-)
+1. [Obtener Datos desde la Terminal](#obtener-datos-desde-la-terminal-)
+2. [Condicionales: if y else](#condicionales-if-y-else)
 
-## Interacción con la Terminal
+## Obtener Datos desde la Terminal 🖨️
 
-En Dart, puedes utilizar la biblioteca `dart:io` para interactuar con la terminal o línea de comandos. Dos funciones clave son:
+En Dart, puedes interactuar con la terminal usando la biblioteca `dart:io`. Para escribir en la consola se utiliza `stdout.write()` y para leer datos ingresados por el usuario, se emplea `stdin.readLineSync()`. Es importante manejar correctamente los valores nulos que puedan devolverse al leer la entrada.
 
-- **stdout.write()**: Para imprimir mensajes en la terminal sin añadir un salto de línea automáticamente.
-- **stdin.readLineSync()**: Para leer la entrada del usuario desde la terminal. Esta función devuelve un `String?`, por lo que es importante manejar los valores nulos correctamente.
+## Condicionales: if y else 🔀
 
----
+Los condicionales en Dart permiten ejecutar diferentes bloques de código basados en condiciones. El uso de `if` y `else` es fundamental para tomar decisiones en la ejecución del programa. `if` evalúa una condición, y si es verdadera, ejecuta el código asociado; de lo contrario, puede ejecutar el bloque `else`.
 
-Este apartado te permite manejar entradas y salidas en programas de consola. Para más detalles, revisa la documentación oficial de [dart:io](https://api.dart.dev/stable/dart-io/dart-io-library.html).
