@@ -84,3 +84,46 @@ saludar(nombre: 'Carlos', edad: 30); // Ambos argumentos deben ser proporcionado
 
 ## Referencias en dart
 Los objetos (como mapas) se pasan por referencia, lo que significa que si modificas una copia, el original también cambia. Para evitar esto, puedes hacer una **copia superficial** del objeto (como en el caso de `{...mapa}`).
+
+## Funciones Lambda en Dart
+
+Las **lambdas** son funciones anónimas, útiles para escribir funciones de forma concisa. Existen dos sintaxis principales:
+
+
+### 1. **Sintaxis de una línea (Arrow Function)**
+
+Usa `=>` para funciones de una sola expresión:
+
+```dart
+var sumar = (int a, int b) => a + b;
+
+void main() {
+  print(sumar(3, 4)); // Imprime: 7
+}
+```	
+
+### 2. **Sintaxis con múltiples líneas**
+
+Si la función tiene varias líneas, se usa `{}`:
+
+```dart	
+var restar = (int a, int b) {
+  return a - b;
+};
+```
+
+### Uso Común
+
+Las lambdas se usan frecuentemente como argumentos de funciones:
+
+```dart
+numeros.forEach((numero) => print(numero * 2));
+```
+
+### Características Clave
+- **Concisas**: Ideal para funciones pequeñas.
+- **Anónimas**: No tienen nombre.
+- **Flexibles**: Pueden ser de una o varias líneas.
+
+
+Las lambdas hacen el código más simple y legible cuando se usan para funciones rápidas.
