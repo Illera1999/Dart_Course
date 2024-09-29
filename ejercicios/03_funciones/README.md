@@ -4,8 +4,6 @@ En esta lección nos enfocaremos en entender cómo funcionan las funciones en Da
 
 ## Tabla de Contenidos 📖
 
-## Tabla de Contenidos 📖
-
 1. [Introducción a las Funciones en Dart](#introducción-a-las-funciones-en-dart)
 2. [Funciones con argumentos de posición](#funciones-con-argumentos-de-posicion)
 3. [Funciones con argumentos nombrados](#funciones-con-argumentos-nombrados)
