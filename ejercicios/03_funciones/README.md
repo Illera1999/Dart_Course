@@ -4,10 +4,22 @@ En esta lección nos enfocaremos en entender cómo funcionan las funciones en Da
 
 ## Tabla de Contenidos 📖
 
+## Tabla de Contenidos 📖
+
 1. [Introducción a las Funciones en Dart](#introducción-a-las-funciones-en-dart)
-
-
-
+2. [Funciones con argumentos de posición](#funciones-con-argumentos-de-posicion)
+3. [Funciones con argumentos nombrados](#funciones-con-argumentos-nombrados)
+4. [Referencias en Dart](#referencias-en-dart)
+5. [Funciones Lambda en Dart](#funciones-lambda-en-dart)
+   - [Sintaxis de una línea (Arrow Function)](#1-sintaxis-de-una-línea-arrow-function)
+   - [Sintaxis con múltiples líneas](#2-sintaxis-con-múltiples-líneas)
+   - [Uso Común](#uso-común)
+   - [Características Clave](#características-clave)
+6. [Callbacks en Dart](#callbacks-en-dart)
+   - [Ejemplo Simple de Callback](#ejemplo-simple-de-callback)
+   - [Callbacks con Funciones Lambda](#callbacks-con-funciones-lambda)
+   - [Uso Común](#uso-común-1)
+   - [Beneficios de los Callbacks](#beneficios-de-los-callbacks)
 ---
 
 ## Introducción a las Funciones en Dart
