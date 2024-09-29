@@ -81,3 +81,6 @@ void saludar({required String nombre, required int edad}) {
 
 saludar(nombre: 'Carlos', edad: 30); // Ambos argumentos deben ser proporcionados
 ```
+
+## Referencias en dart
+Los objetos (como mapas) se pasan por referencia, lo que significa que si modificas una copia, el original también cambia. Para evitar esto, puedes hacer una **copia superficial** del objeto (como en el caso de `{...mapa}`).
