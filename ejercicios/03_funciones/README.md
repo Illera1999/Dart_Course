@@ -58,3 +58,26 @@ saludar('Lucía', 25); // Llamada con ambos argumentos
 ```
 
 En el caso de argumentos opcionales, si no se proporciona un valor, Dart utiliza el valor por defecto.
+
+## Funciones con argumentos nombrados
+En Dart, los argumentos por nombre permiten pasar parámetros a una función especificando el nombre del argumento. Esto hace que el orden en que se pasan los argumentos sea irrelevante. Estos se definen entre {llaves}.
+
+Se pueden hacer opcionales y darles valores predeterminados, o marcarlos como requeridos usando la palabra clave 'required'.
+
+```dart	
+void saludar({String nombre = 'Anónimo', int edad = 0}) {
+  print('Hola $nombre, tienes $edad años.');
+}
+
+saludar(); // Llamada sin argumentos
+saludar(nombre: 'Carlos'); // Llamada pasando solo un argumento
+saludar(edad: 25, nombre: 'Lucía'); // Llamada con ambos argumentos, en cualquier orden
+```
+
+```dart	
+void saludar({required String nombre, required int edad}) {
+  print('Hola $nombre, tienes $edad años.');
+}
+
+saludar(nombre: 'Carlos', edad: 30); // Ambos argumentos deben ser proporcionados
+```
