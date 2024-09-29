@@ -125,5 +125,43 @@ numeros.forEach((numero) => print(numero * 2));
 - **Anónimas**: No tienen nombre.
 - **Flexibles**: Pueden ser de una o varias líneas.
 
-
 Las lambdas hacen el código más simple y legible cuando se usan para funciones rápidas.
+
+## Callbacks en Dart
+
+Un **callback** es una función que se pasa como argumento a otra función y se invoca en el momento adecuado dentro de la función principal.
+
+
+### Ejemplo Simple de Callback
+
+```dart	
+void procesar(int a, int b, Function callback) {
+  int resultado = a + b;
+  callback(resultado);
+}
+
+void imprimirResultado(int resultado) {
+  print('El resultado es: $resultado');
+}
+
+void main() {
+  procesar(2, 3, imprimirResultado); // Llama a la función con un callback
+}
+```	
+
+### Callbacks con Funciones Lambda
+
+Puedes usar lambdas como callbacks para simplificar:
+
+```dart
+procesar(2, 3, (resultado) => print('Resultado: $resultado'));
+```
+
+### Uso Común
+
+Los callbacks son útiles en operaciones asincrónicas o eventos como `Future` y `Streams`.
+
+### Beneficios de los Callbacks
+
+- **Reutilizables**: Ejecutan código personalizado en diferentes situaciones.
+- **Flexibles**: Permiten un comportamiento dinámico.
