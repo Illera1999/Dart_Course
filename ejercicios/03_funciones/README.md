@@ -35,3 +35,26 @@ int sumar(int a, int b) {
 
 int resultado = sumar(3, 4); // resultado = 7
 ```
+
+## Funciones con argumentos de posición
+En Dart, los argumentos de posición son aquellos que se pasan a una función en un orden específico. Estos pueden ser obligatorios o opcionales. Los argumentos opcionales se definen entre [corchetes] y pueden tener valores predeterminados.
+
+```dart	
+void saludar(String nombre, int edad) {
+  print('Hola $nombre, tienes $edad años.');
+}
+
+saludar('Carlos', 30); // Llamada a la función
+```
+
+```dart	
+void saludar([String nombre = 'Anónimo', int edad = 0]) {
+  print('Hola $nombre, tienes $edad años.');
+}
+
+saludar(); // Llamada sin argumentos
+saludar('Lucía'); // Llamada con un solo argumento
+saludar('Lucía', 25); // Llamada con ambos argumentos
+```
+
+En el caso de argumentos opcionales, si no se proporciona un valor, Dart utiliza el valor por defecto.
