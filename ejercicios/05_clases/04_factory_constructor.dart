@@ -39,7 +39,5 @@ class Rectangle {
 
 void main(List<String> args) {
   final figura = Rectangle(10, 10);
-
   print(figura);
-  
 }

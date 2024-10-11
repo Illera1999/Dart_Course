@@ -6,6 +6,8 @@
 3. [Herencia y Mixins](#herencia-y-mixins)
 4. [Propiedades Privadas](#propiedades-privadas)
 5. [Ejemplo Completo](#ejemplo-completo)
+6. [Variables estáticas](#variables-estáticas)
+7. [Singleton](#singleton)
 
 ---
 
@@ -125,5 +127,87 @@ class Persona {
       _nombre = nuevoNombre;
     }
   }
+}
+```
+
+## Variables Estáticas
+
+
+Las variables estáticas en Dart son propiedades o métodos que pertenecen a una clase en lugar de a una instancia de la clase. Esto significa que puedes acceder a una variable estática sin crear una instancia de la clase. Son útiles para almacenar valores que son comunes a todas las instancias de una clase o para métodos que no dependen de las propiedades de la instancia.
+
+Para declarar una variable estática en Dart, se usa la palabra clave `static`. Estas variables se inicializan una sola vez, cuando se carga la clase. Los métodos estáticos también se declaran de manera similar y no pueden acceder a propiedades o métodos de instancia directamente.  
+
+
+### Ejemplo de variable estática
+
+```dart  
+class Banco {
+  static double tasaInteres = 4.5;
+
+  static void mostrarTasa() {
+    print('La tasa de interés actual es $tasaInteres%');
+  }
+}
+```
+
+En este ejemplo:
+- `tasaInteres` es una variable estática que pertenece a la clase `Banco`.
+- El método `mostrarTasa` también es estático y puede ser llamado directamente usando `Banco.mostrarTasa()` sin instanciar la clase.
+
+### Accediendo a variables estáticas
+
+```dart  
+void main() {
+  // Acceder a la variable estática sin crear una instancia
+  print(Banco.tasaInteres); // Salida: 4.5
+
+  // Llamar a un método estático
+  Banco.mostrarTasa(); // Salida: La tasa de interés actual es 4.5%
+}
+```
+
+
+## Singleton
+
+Un singleton es una clase que solo puede existir una vez en memoria. Es útil para almacenar valores que son comunes a todas las instancias de una clase o para métodos que no dependen de las propiedades de la instancia.
+
+Para crear un singleton, se utiliza la palabra clave `factory` junto con la palabra clave `Singleton`. Esto crea una clase con un constructor privado y un constructor estático que devuelve una instancia de la clase. 
+
+### Ejemplo de Singleton
+```dart
+class MiServicio {
+
+  static final MiServicio _singleton = MiServicio._();
+
+  factory MiServicio(){
+    return _singleton;
+  }
+
+  MiServicio._();
+
+}
+```
+
+En este ejemplo:
+- La clase `MiServicio` es un singleton.
+- El constructor privado `_` es el constructor estático que devuelve una instancia de la clase.
+- El constructor estático `MiServicio()` es el constructor que se llama cuando se crea una nueva instancia de la clase.
+
+### Accediendo a Singleton
+
+```dart
+void main(List<String> args) {
+  
+  final spotifyService1 = new MiServicio();
+  spotifyService1.url = 'https://api.spotify.com/v1';
+
+  final spotifyService2 = new MiServicio();
+  spotifyService2.url = 'https://api.spotify.com/v2';
+
+  print(spotifyService1 == spotifyService2); // Flaso
+
+  print (spotifyService1.url); // https://api.spotify.com/v2
+  print (spotifyService2.url); // https://api.spotify.com/v2
+
 }
 ```
